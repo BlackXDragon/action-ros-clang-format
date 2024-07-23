@@ -35,6 +35,8 @@ echo "======================="
 
 apply_style
 
+git config --global --add safe.directory $PWD
+
 modified_files=$(git status | grep modified)
 
 if [[ $? == 0 ]] ;then
